@@ -229,7 +229,6 @@ Meta-cognitive analysis mode that enables Claude Code to step outside normal ope
 | ⚡ | Performance | Speed, optimization |
 | 🔍 | Analysis | Search, investigation |
 | 🔧 | Configuration | Setup, tools |
-| 🛡️ | Security | Protection |
 | 📦 | Deployment | Package, bundle |
 | 🎨 | Design | UI, frontend |
 | 🌐 | Network | Web, connectivity |
@@ -257,7 +256,6 @@ Meta-cognitive analysis mode that enables Claude Code to step outside normal ope
 
 ### Quality & Analysis
 - `qual` quality, maintainability
-- `sec` security, safety measures
 - `err` error, exception handling
 - `rec` recovery, resilience
 - `sev` severity, priority level
