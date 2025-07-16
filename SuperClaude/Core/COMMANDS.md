@@ -69,7 +69,7 @@ wave-enabled: true
 performance-profile: "standard"
 ---
 ```
-- **Auto-Persona**: Frontend, Backend, Architect, Security (context-dependent)
+- **Auto-Persona**: Frontend, Backend, Architect (context-dependent)
 - **MCP Integration**: Magic (UI components), Context7 (patterns), Sequential (complex logic)
 - **Tool Orchestration**: [Read, Write, Edit, MultiEdit, Bash, Glob, TodoWrite, Task]
 - **Arguments**: `[feature-description]`, `--type component|api|service|feature`, `--framework <name>`, `--<flags>`
@@ -87,7 +87,7 @@ wave-enabled: true
 performance-profile: "complex"
 ---
 ```
-- **Auto-Persona**: Analyzer, Architect, Security
+- **Auto-Persona**: Analyzer, Architect
 - **MCP Integration**: Sequential (primary), Context7 (patterns), Magic (UI analysis)
 - **Tool Orchestration**: [Read, Grep, Glob, Bash, TodoWrite]
 - **Arguments**: `[target]`, `@<path>`, `!<command>`, `--<flags>`
