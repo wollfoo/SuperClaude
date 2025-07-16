@@ -84,11 +84,6 @@ infrastructure:
   file_patterns: ["Dockerfile", "*.yml", "*.yaml", ".github/*", "terraform/*"]
   typical_operations: [setup, configure, automate, monitor]
 
-security:
-  keywords: [vulnerability, authentication, encryption, audit, compliance]
-  file_patterns: ["*auth*", "*security*", "*.pem", "*.key"]
-  typical_operations: [scan, harden, audit, fix]
-
 documentation:
   keywords: [document, README, wiki, guide, manual, instructions, commit, release, changelog]
   file_patterns: ["*.md", "*.rst", "*.txt", "docs/*", "README*", "CHANGELOG*"]
@@ -197,16 +192,13 @@ wave-strategies:
 | "implement feature" | moderate | any | domain-specific persona, Context7, Sequential | 88% |
 | "implement API" | moderate | backend | backend persona, --seq, Context7 | 92% |
 | "implement UI component" | simple | frontend | frontend persona, Magic, --c7 | 94% |
-| "implement authentication" | complex | security | security persona, backend persona, --validate | 90% |
 | "fix bug" | moderate | any | analyzer persona, --think, Sequential | 85% |
 | "optimize performance" | complex | backend | performance persona, --think-hard, Playwright | 90% |
-| "security audit" | complex | security | security persona, --ultrathink, Sequential | 95% |
 | "write documentation" | moderate | documentation | scribe persona, --persona-scribe=en, Context7 | 95% |
 | "improve iteratively" | moderate | iterative | intelligent persona, --seq, loop creation | 90% |
 | "analyze large codebase" | complex | any | --delegate --parallel-dirs, domain specialists | 95% |
 | "comprehensive audit" | complex | multi | --multi-agent --parallel-focus, specialized agents | 95% |
 | "improve large system" | complex | any | --wave-mode --adaptive-waves | 90% |
-| "security audit enterprise" | complex | security | --wave-mode --wave-validation | 95% |
 | "modernize legacy system" | complex | legacy | --wave-mode --enterprise-waves --wave-checkpoint | 92% |
 | "comprehensive code review" | complex | quality | --wave-mode --wave-validation --systematic-waves | 94% |
 
@@ -257,7 +249,6 @@ wave-strategies:
 - **Default**: `single_agent`
 
 **Wave Strategy Selection**:
-- **Security Focus**: `wave_validation`
 - **Performance Focus**: `progressive_waves`
 - **Critical Operations**: `wave_validation`
 - **Multiple Operations**: `adaptive_waves`
@@ -295,7 +286,6 @@ token_optimization:
 **Wave Auto-Delegation Triggers**:
 - Complex improvement: complexity > 0.8 AND files > 20 AND operation_types > 2 → --wave-count 5 (95%)
 - Multi-domain analysis: domains > 3 AND tokens > 15K → --adaptive-waves (90%)
-- Critical operations: production_deploy OR security_audit → --wave-validation (95%)
 - Enterprise scale: files > 100 AND complexity > 0.7 AND domains > 2 → --enterprise-waves (85%)
 - Large refactoring: large_scope AND structural_changes AND complexity > 0.8 → --systematic-waves --wave-validation (93%)
 
@@ -311,7 +301,6 @@ token_optimization:
 
 **Sub-Agent Specialization Matrix**:
 - **Quality**: qa persona, complexity/maintainability focus, Read/Grep/Sequential tools
-- **Security**: security persona, vulnerabilities/compliance focus, Grep/Sequential/Context7 tools
 - **Performance**: performance persona, bottlenecks/optimization focus, Read/Sequential/Playwright tools
 - **Architecture**: architect persona, patterns/structure focus, Read/Sequential/Context7 tools
 - **API**: backend persona, endpoints/contracts focus, Grep/Context7/Sequential tools
@@ -337,10 +326,6 @@ token_optimization:
 - **Trigger Conditions**: Response time >500ms, error rate >1%, high resource usage
 - **Confidence Threshold**: 85% for automatic activation
 
-**Security Concerns** → `--persona-security` + `--focus security`
-- **Trigger Conditions**: Vulnerability detection, auth failures, compliance gaps
-- **Confidence Threshold**: 90% for automatic activation
-
 **UI/UX Tasks** → `--persona-frontend` + `--magic`
 - **Trigger Conditions**: Component creation, responsive design, accessibility
 - **Confidence Threshold**: 80% for automatic activation
@@ -357,7 +342,6 @@ token_optimization:
 
 **Context-Based Auto-Activation**:
 - Performance issues → --persona-performance + --focus performance + --think
-- Security concerns → --persona-security + --focus security + --validate
 - UI/UX tasks → --persona-frontend + --magic + --c7
 - Complex debugging → --think + --seq + --persona-analyzer
 - Large codebase → --uc when context >75% + --delegate auto
@@ -408,7 +392,6 @@ quality_gates:
   step_1_syntax: "language parsers, Context7 validation, intelligent suggestions"
   step_2_type: "Sequential analysis, type compatibility, context-aware suggestions"
   step_3_lint: "Context7 rules, quality analysis, refactoring suggestions"
-  step_4_security: "Sequential analysis, vulnerability assessment, OWASP compliance"
   step_5_test: "Playwright E2E, coverage analysis (≥80% unit, ≥70% integration)"
   step_6_performance: "Sequential analysis, benchmarking, optimization suggestions"
   step_7_documentation: "Context7 patterns, completeness validation, accuracy verification"
@@ -430,12 +413,12 @@ completion_requirements:
   validation: "all 8 steps pass, evidence provided, metrics documented"
   ai_integration: "MCP coordination, persona integration, tool orchestration, ≥90% context retention"
   performance: "response time targets, resource limits, success thresholds, token efficiency"
-  quality: "code quality standards, security compliance, performance assessment, integration testing"
+  quality: "code quality standards, performance assessment, integration testing"
 
 evidence_requirements:
   quantitative: "performance/quality/security metrics, coverage percentages, response times"
   qualitative: "code quality improvements, security enhancements, UX improvements"
-  documentation: "change rationale, test results, performance benchmarks, security scans"
+  documentation: "change rationale, test results, performance benchmarks"
 ```
 
 ## ⚡ Performance Optimization
