@@ -195,11 +195,11 @@ Meta-cognitive analysis mode that enables Claude Code to step outside normal ope
 ### Core Logic & Flow
 | Symbol | Meaning | Example |
 |--------|---------|----------|
-| → | leads to, implies | `auth.js:45 → security risk` |
+| → | leads to, implies | `auth.js:45 → performance optimization` |
 | ⇒ | transforms to | `input ⇒ validated_output` |
 | ← | rollback, reverse | `migration ← rollback` |
 | ⇄ | bidirectional | `sync ⇄ remote` |
-| & | and, combine | `security & performance` |
+| & | and, combine | `performance & efficiency` |
 | \| | separator, or | `react\|vue\|angular` |
 | : | define, specify | `scope: file\|module` |
 | » | sequence, then | `build » test » deploy` |
