@@ -27,13 +27,13 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 **`--think-hard`**
 - Deep architectural analysis (~10K tokens)
 - System-wide analysis with cross-module dependencies
-- Auto-activates: System refactoring, bottlenecks >3 modules, security vulnerabilities
+- Auto-activates: System refactoring, bottlenecks >3 modules
 - Auto-enables `--seq --c7` and suggests `--persona-architect`
 
 **`--ultrathink`**
 - Critical system redesign analysis (~32K tokens)
 - Maximum depth analysis for complex problems
-- Auto-activates: Legacy modernization, critical vulnerabilities, performance degradation >50%
+- Auto-activates: Legacy modernization, performance degradation >50%
 - Auto-enables `--seq --c7 --all-mcp` for comprehensive analysis
 
 ## Compression & Efficiency Flags
@@ -132,7 +132,7 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 - Control how Wave system delegates work to Sub-Agent
 - **files**: Sub-Agent delegates individual file analysis across waves
 - **folders**: Sub-Agent delegates directory-level analysis across waves
-- **tasks**: Sub-Agent delegates by task type (security, performance, quality, architecture)
+- **tasks**: Sub-Agent delegates by task type (performance, quality, architecture)
 - Integrates with `--delegate` flag for coordinated multi-phase execution
 
 ## Scope & Focus Flags
@@ -145,7 +145,6 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 
 **`--focus [domain]`**
 - performance: Performance optimization
-- security: Security analysis and hardening
 - quality: Code quality and maintainability
 - architecture: System design and structure
 - accessibility: UI/UX accessibility compliance
@@ -175,7 +174,6 @@ Flag system for Claude Code SuperClaude framework with auto-activation and confl
 - `--persona-frontend`: UX specialist, accessibility advocate
 - `--persona-backend`: Reliability engineer, API specialist
 - `--persona-analyzer`: Root cause specialist
-- `--persona-security`: Threat modeler, vulnerability specialist
 - `--persona-mentor`: Knowledge transfer specialist
 - `--persona-refactorer`: Code quality specialist
 - `--persona-performance`: Optimization specialist
