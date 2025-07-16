@@ -56,9 +56,6 @@ Execute complex tasks with intelligent workflow management, cross-session persis
 ### Enterprise Strategy
 1. **Stakeholder Analysis**: Multi-domain impact assessment
 2. **Resource Allocation**: Optimal resource distribution across tasks
-3. **Risk Management**: Comprehensive risk assessment and mitigation
-4. **Compliance Validation**: Regulatory and policy compliance checks
-5. **Governance Reporting**: Detailed progress and compliance reporting
 
 ## Advanced Features
 
@@ -84,7 +81,6 @@ Execute complex tasks with intelligent workflow management, cross-session persis
 - **Evidence Collection**: Systematic evidence gathering during execution
 - **Validation Criteria**: Customizable completion criteria
 - **Quality Metrics**: Comprehensive quality assessment
-- **Compliance Checks**: Automated compliance validation
 
 ## Integration Points
 
