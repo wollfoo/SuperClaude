@@ -6,16 +6,16 @@ description: "Analyze code quality, security, performance, and architecture"
 # /sc:analyze - Code Analysis
 
 ## Purpose
-Execute comprehensive code analysis across quality, security, performance, and architecture domains.
+Execute comprehensive code analysis across quality, performance, and architecture domains.
 
 ## Usage
 ```
-/sc:analyze [target] [--focus quality|security|performance|architecture] [--depth quick|deep]
+/sc:analyze [target] [--focus quality|performance|architecture] [--depth quick|deep]
 ```
 
 ## Arguments
 - `target` - Files, directories, or project to analyze
-- `--focus` - Analysis focus area (quality, security, performance, architecture)
+- `--focus` - Analysis focus area (quality, performance, architecture)
 - `--depth` - Analysis depth (quick, deep)
 - `--format` - Output format (text, json, report)
 
