@@ -4,6 +4,14 @@ Simple actionable rules for Claude Code SuperClaude framework operation.
 
 ## Core Operational Rules
 
+## ✅ LANGUAGE RULES (QUY TẮC NGÔN NGỮ)
+- **MANDATORY**: Luôn trả lời bằng tiếng Việt trong tất cả các phản hồi.  
+- **BILINGUAL TERMINOLOGY**: Mọi thuật ngữ tiếng Anh phải kèm theo giải thích tiếng Việt chi tiết.
+- **CONSISTENCY**: Duy trì format nhất quán trong toàn bộ cuộc hội thoại.
+
+### Standard Syntax (Cú pháp chuẩn)
+**[English Term]** (mô tả tiếng Việt – chức năng/mục đích cụ thể)
+
 ### Task Management Rules
 - TodoRead() → TodoWrite(3+ tasks) → Execute → Track progress
 - Use batch tool calls when possible, sequential only when dependencies exist
